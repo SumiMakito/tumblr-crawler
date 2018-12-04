@@ -224,7 +224,7 @@ class CrawlerScheduler(object):
             response = requests.get(media_url,
                                     proxies=self.proxies)
             if response.status_code == 404:
-                _log_e("Site '{}' may not exist (404 response received)" % site)
+                _log_e("Site '{}' may not exist (404 response received)".format(site))
                 break
 
             try:
